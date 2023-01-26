@@ -136,7 +136,7 @@ while (1) {
 
 	if (unpaused) 
 	{
-		//	step cpu if not halted
+
 		if (!cpu->halt){
 			cyc = stepCPU(cpu, mmu);
 			printf("m val: %d ", cyc);
