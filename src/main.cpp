@@ -64,7 +64,7 @@ void handleInterrupts(mmu_t *mmu, cpu_t *cpu)
 
 	//	handle interrupts
 	if (cpu->ime) {
-		//	some interrupt is enabled and allowed
+		
 		if (mmu_read_byte(mmu, 0xffff) & mmu_read_byte(mmu, 0xff0f)) {
 			//	handle interrupts by priority (starting at bit 0 - vblank)
 			
